@@ -26,6 +26,7 @@ Specify hardware:
 bash
 #sudo apt update
 
+  
 7. Add Python 3.9 PPA: Use the deadsnakes PPA to install Python 3.9, which is a version required by Ryu.
 bash
 #sudo add-apt-repository ppa:deadsnakes/ppa
@@ -35,6 +36,11 @@ bash
    # sudo apt install python3.9 python3.9-venv
 9. Install Mininet and Open vSwitch: Install Mininet and Open vSwitch using the system's package manager.
     # sudo apt-get install mininet openvswitch-switch
+    **Useful mininet git hub link and installation step:**
+    -- Clone the mininet from the GitHub link - "git clone https://github.com/mininet/mininet"
+    -- cd mininet
+    --  ./utils/install -a    (make sure, install command should run with -a option)
+    -- test the installation - #sudo mn --test pingall
 
 11. Install and configure external SDN controller:
    Description:
